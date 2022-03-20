@@ -31,7 +31,7 @@ wget <xml link>>
 6. Under "XMLsightingData_citiesUSA09", right click `XML` and click `Open link in new tab`.
 7. Repeat same process of using `wget` command.
 
-## Instructions for Building Container from Dockerfile:
+## Instructions for Building and Container from Dockerfile:
 1. Type in command line: `touch Dockerfile`
 2. Specify requirements needed for the Flask application by typing in command line: `vim requirements.txt`
 3. In the file created in step 2 type: `Flask==2.0.3` and save.
@@ -58,5 +58,35 @@ CMD ["app.py"]
     - NOTE: do NOT forget the `.` at the end
 6. Push the container by typing in command line: `docker push <username>/<file-name>:<name>
 
+## Instructions to Pull Pre-Containerized Copy of App from Docker Hub:
+1. Type in command line: `docker pull <username>/<file-name>:<name>`
+
+## Instructions to Interact With the Application:
+1. Type and run in command line:
+```
+export FLASK_APP=app.py
+export FLASK_ENV=development
+flask run -p 5014
+```
+2. Open a separate window terminal and type in command line: `curl localhost:5014/`
+   The screen should display a list of routes that obtains specific information in which the user may interact with to get desired info:
+```
+ISS Sighting Location
+/                                                      (GET) print this information
+/reset                                                 (POST) reset data, load from file
+Routes for querying positional and velocity data:
+
+/epochs                                                (GET) lists all epochs in positional and velocity data
+/epochs/<epoch>                                        (GET) lists all data associated with a specific epoch
+Routes for Querying Sighting Data
+
+/countries                                             (GET) lists all countries in sighting data
+/countries/<country>                                   (GET) lists all data for a specific country
+/countries/<country>/regions                           (GET) lists all regions in a specific country
+/countries/<country>/regions/<region>                  (GET) lists all data for a specific region
+/countries/<country>/regions/<region>/cities           (GET) lists all cities in a specific region
+/countries/<country>/regions/<region>/cities/<city>    (GET) lists all data for a specific city
+```
+3. 
 
 
