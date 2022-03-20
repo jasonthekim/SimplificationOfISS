@@ -88,6 +88,55 @@ Routes for Querying Sighting Data
 /countries/<country>/regions/<region>/cities           (GET) lists all cities in a specific region
 /countries/<country>/regions/<region>/cities/<city>    (GET) lists all data for a specific city
 ```
-3. 
+3. Notably, it is important that the user begins the command with: `curl localhost:5014` before typing the route.
+4. It is also important to note that the user must acquire the data - through the `/reset` route - before interacting with the routes for specific information.
+
+## Interpreting the Results:
+Sample Input:
+```
+curl localhost:5014/countries/United_States/regions/Texas/cities/Big_Bend_National_Park
+```
+Sample Output:
+```
+[
+  {
+    "city": "Big_Bend_National_Park",
+    "spacecraft": "ISS",
+    "sighting_date": "Mon Feb 21/06:14 AM",
+    "duration_minutes": "1",
+    "max_elevation": "16",
+    "enters": "16 above NNW",
+    "exits": "10 above N",
+    "utc_offset": "-6.0",
+    "utc_time": "12:14",
+    "utc_date": "Feb 21, 2022"
+  },
+  {
+    "city": "Big_Bend_National_Park",
+    "spacecraft": "ISS",
+    "sighting_date": "Mon Feb 21/06:14 AM",
+    "duration_minutes": "1",
+    "max_elevation": "16",
+    "enters": "16 above NNW",
+    "exits": "10 above N",
+    "utc_offset": "-6.0",
+    "utc_time": "12:14",
+    "utc_date": "Feb 21, 2022"
+  },
+  {
+    "city": "Big_Bend_National_Park",
+    "spacecraft": "ISS",
+    "sighting_date": "Mon Feb 21/06:14 AM",
+    "duration_minutes": "1",
+    "max_elevation": "16",
+    "enters": "16 above NNW",
+    "exits": "10 above N",
+    "utc_offset": "-6.0",
+    "utc_time": "12:14",
+    "utc_date": "Feb 21, 2022"
+...
+```
+In interpreting the data, we can see that the user wanted specific info on the city, Big Bend National Park, which is in the Texas region within the country, United States. The user input displays information about the spacecraft's name, sighting date, duration, max elevation, enters and exits, utc offset, utc time, and the utc date. 
+
 
 
