@@ -9,20 +9,27 @@ app.py:
 - loads in the two datasets, positional.xml and sighting.xml.
 - contains routes that return important, desired information.
 
-test_app.py:
+*test_app.py*:
 - makes sure each function in app.py has no errors.
 - tests check that return types are correct.
 
-Dockerfile:
+*Dockerfile*:
 - containerizes the flask application and both datasets.
 
-Makefile:
+*Makefile*:
 - written with targets to build a container and to start the containerized Flask application.
 
 ## Instructions to Download Datasets:
 1. Log into ISP and connect to TACC server.
 2. Click on [this link](https://data.nasa.gov/Space-Science/ISS_COORDS_2022-02-13/r6u8-bhhq) to access data files.
-3. Under "Public Distribution File", right click `XML`, click 
+3. Under "Public Distribution File", right click `XML` and click `Open link in new tab`
+4. Copy the URL and type in the command line:
+```
+wget <xml link>>
+```
+5. After downloading the positional data, now download specific sighting data by going to the same link. 
+6. Under "XMLsightingData_citiesUSA09", right click `XML` and click `Open link in new tab`.
+7. Repeat same process of using `wget` command.
 
 
 
