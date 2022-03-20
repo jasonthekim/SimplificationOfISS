@@ -69,7 +69,8 @@ export FLASK_ENV=development
 flask run -p 5014
 ```
 2. Open a separate window terminal and type in command line: `curl localhost:5014/`
-   The screen should display a list of routes that obtains specific information in which the user may interact with to get desired info:
+
+The screen should display a list of routes that obtains specific information in which the user may interact with to get desired info:
 ```
 ISS Sighting Location
 /                                                      (GET) print this information
