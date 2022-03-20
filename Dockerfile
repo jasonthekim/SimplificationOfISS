@@ -1,13 +1,16 @@
 FROM python:3.9
 
+RUN mkdir /app
+
 RUN pip3 install --user xmltodict
 
-COPY positional.xml /code/positional.xml
+WORKDIR /app
 
-COPY sighting.xml /code/sighting.xml
+COPY requirements.txt /app/requirements.txt
 
-COPY app.py /code/app.py
+RUN pip install -r /app/requirements.txt
 
-COPY test_app.py /code/test_app.py
+COPY . /app
 
-
+ENTRYPOINT ["python"]
+CMD ["app.py"]

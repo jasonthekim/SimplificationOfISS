@@ -4,7 +4,7 @@
 We have found an abundance of positional data for the International Space Station (ISS). Our goal and objective is to build a containerized flask application for querying and returning desired information from the ISS data set, full of interesting information including ISS position and velocity data at given times, as well as when the ISS can be seen over select cities. This project aims to sift through the large and complex dataset with ease through simple commands. 
 
 ## Description of Important Files:
-app.py:
+*app.py*:
 - flask application for tracking ISS position and sightings.
 - loads in the two datasets, positional.xml and sighting.xml.
 - contains routes that return important, desired information.
@@ -31,7 +31,9 @@ wget <xml link>>
 6. Under "XMLsightingData_citiesUSA09", right click `XML` and click `Open link in new tab`.
 7. Repeat same process of using `wget` command.
 
-
+## Instructions for Building Container from Dockerfile:
+1. Type in command line: `touch Dockerfile`
+2. 
 
 
 
