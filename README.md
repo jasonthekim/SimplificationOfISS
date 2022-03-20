@@ -33,8 +33,30 @@ wget <xml link>>
 
 ## Instructions for Building Container from Dockerfile:
 1. Type in command line: `touch Dockerfile`
-2. 
+2. Specify requirements needed for the Flask application by typing in command line: `vim requirements.txt`
+3. In the file created in step 2 type: `Flask==2.0.3` and save.
+4. Open the created Dockerfile and enter in:
+```
+FROM python:3.9
 
+RUN mkdir /app
+
+RUN pip3 install --user xmltodict
+
+WORKDIR /app
+
+COPY requirements.txt /app/requirements.txt
+
+RUN pip install -r /app/requirements.txt
+
+COPY . /app
+
+ENTRYPOINT ["python"]
+CMD ["app.py"] 
+```
+5. Build the container by typing in command line: `docker build -t <username>/<file-name>:<name> .` 
+    - NOTE: do NOT forget the `.` at the end
+6. Push the container by typing in command line: `docker push <username>/<file-name>:<name>
 
 
 
