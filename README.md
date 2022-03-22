@@ -56,7 +56,7 @@ CMD ["app.py"]
 ```
 5. Build the container by typing in command line: `docker build -t <username>/<file-name>:<name> .` 
     - NOTE: do NOT forget the `.` at the end
-6. Push the container by typing in command line: `docker push <username>/<file-name>:<name>
+6. Push the container by typing in command line: `docker push <username>/<file-name>:<name>`
 
 ## Instructions to Pull Pre-Containerized Copy of App from Docker Hub:
 1. Type in command line: `docker pull <username>/<file-name>:<name>`
@@ -89,7 +89,7 @@ Routes for Querying Sighting Data
 /countries/<country>/regions/<region>/cities/<city>    (GET) lists all data for a specific city
 ```
 3. Notably, it is important that the user begins the command with: `curl localhost:5014` before typing the route.
-4. It is also important to note that the user must acquire the data - through the `/reset` route - before interacting with the routes for specific information.
+4. It is also important to note that the user must acquire the data - through the command: `curl localhost:5014/reset -X POST` - before interacting with the routes for specific information.
 
 ## Interpreting the Results:
 Sample Input:
