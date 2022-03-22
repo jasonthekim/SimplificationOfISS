@@ -1,4 +1,4 @@
-# Title
+# Sifting Through ISS With Ease
 
 ## Description of Project:
 We have found an abundance of positional data for the International Space Station (ISS). Our goal and objective is to build a containerized flask application for querying and returning desired information from the ISS data set, full of interesting information including ISS position and velocity data at given times, as well as when the ISS can be seen over select cities. This project aims to sift through the large and complex dataset with ease through simple commands. 
@@ -139,4 +139,5 @@ Sample Output:
 In interpreting the data, we can see that the user wanted specific info on the city, Big Bend National Park, which is in the Texas region within the country, United States. The user input displays information about the spacecraft's name, sighting date, duration, max elevation, enters and exits, utc offset, utc time, and the utc date. 
 
 
-
+## Data citations:
+1. Goodwin, S. (n.d.). ISS_COORDS_2022-02-13. NASA. [https://nasa-public-data.s3.amazonaws.com/iss-coords/2022-02-13/ISS_OEM/ISS.OEM_J2K_EPH.xml](https://nasa-public-data.s3.amazonaws.com/iss-coords/2022-02-13/ISS_OEM/ISS.OEM_J2K_EPH.xml) Retrieved March 21, 2022, from [https://data.nasa.gov/Space-Science/ISS_COORDS_2022-02-13/r6u8-bhhq]()
