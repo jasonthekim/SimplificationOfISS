@@ -140,5 +140,5 @@ In interpreting the data, we can see that the user wanted specific info on the c
 
 
 ## Data citations:
-1. Goodwin, S. (n.d.). ISS_COORDS_2022-02-13. NASA. [https://nasa-public-data.s3.amazonaws.com/iss-coords/2022-02-13/ISS_OEM/ISS.OEM_J2K_EPH.xml]() Retrieved March 21, 2022, from [https://data.nasa.gov/Space-Science/ISS_COORDS_2022-02-13/r6u8-bhhq]()
-2. Goodwin, S. (n.d.). XMLsightingData_citiesUSA09. NASA. Retrieved March 21, 2022, from [https://nasa-public-data.s3.amazonaws.com/iss-coords/2022-02-13/ISS_sightings/XMLsightingData_citiesUSA09.xml]()
+1. Goodwin, S. (n.d.). ISS_COORDS_2022-02-13. NASA. [https://nasa-public-data.s3.amazonaws.com/iss-coords/2022-02-13/ISS_OEM/ISS.OEM_J2K_EPH.xml](https://nasa-public-data.s3.amazonaws.com/iss-coords/2022-02-13/ISS_OEM/ISS.OEM_J2K_EPH.xml) Retrieved March 21, 2022, from [https://data.nasa.gov/Space-Science/ISS_COORDS_2022-02-13/r6u8-bhhq](https://data.nasa.gov/Space-Science/ISS_COORDS_2022-02-13/r6u8-bhhq)
+2. Goodwin, S. (n.d.). XMLsightingData_citiesUSA09. NASA. Retrieved March 21, 2022, from [https://nasa-public-data.s3.amazonaws.com/iss-coords/2022-02-13/ISS_sightings/XMLsightingData_citiesUSA09.xml](https://nasa-public-data.s3.amazonaws.com/iss-coords/2022-02-13/ISS_sightings/    XMLsightingData_citiesUSA09.xml)
