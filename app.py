@@ -9,7 +9,7 @@ app = Flask(__name__)
 positional_data = {}
 sighting_data = {}
 
-@app.route('/reset', methods=['POST'])
+@app.route('/read_data', methods=['POST'])
 def read_data_from_file_into_dict():
     """
     This route reads in two xml files, converting them to dictionaries and confirming that the data files have been successfully read.
@@ -30,7 +30,7 @@ def read_data_from_file_into_dict():
 
 
 
-@app.route('/', methods=['GET'])
+@app.route('/help', methods=['GET'])
 def info():
     """
     This route offers information on how to interact with the application
